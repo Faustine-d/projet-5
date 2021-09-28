@@ -155,7 +155,7 @@ affichagePrixTotal();
 function affichagePrixTotal(){
   document.getElementById("sous-total").innerHTML = totalSousTotal + " €";
   document.getElementById("frais-de-port").innerHTML = fraisDePort + " €";
-  document.getElementById("prix-total").innerHTML = totalSousTotal + fraisDePort  + " €";
+  document.getElementById("prix-total").innerHTML = Math.round(totalSousTotal + fraisDePort)  + " €";
  
 }
 
@@ -195,6 +195,7 @@ const validPrenom = function(inputPrenom){
   else{
     small.innerHTML = "Veuillez saisir votre prénom";
     small.style.color='red';
+    return false;   
   }
 };
 // Validation Nom //
@@ -215,6 +216,7 @@ const validNom = function(inputNom){
   else{
     small.innerHTML = "Veuillez saisir votre nom";
     small.style.color='red';
+    return false;
   }
 };
 // Validation Email //
@@ -235,6 +237,7 @@ const validEmail = function(inputEmail){
   else{
     small.innerHTML = "Veuillez saisir votre email";
     small.style.color='red';
+    return false; 
   }
 };
 
@@ -256,6 +259,7 @@ const validTelephone = function(inputTelephone){
   else{
     small.innerHTML = "Veuillez saisir votre numéro de téléphone";
     small.style.color='red';
+    return false; 
   }
 };
 
@@ -277,6 +281,7 @@ const validAdresse = function(inputAdresse){
   else{
     small.innerHTML = "Veuillez saisir votre adresse";
     small.style.color='red';
+    return false; 
   }
 };
 
@@ -298,6 +303,7 @@ const validZip= function(inputZip){
   else{
     small.innerHTML = "Veuillez saisir votre code postal";
     small.style.color='red';
+    return false; 
   }
 };
 
@@ -319,6 +325,7 @@ const validVille = function(inputVille){
   else{
     small.innerHTML = "Veuillez saisir votre ville";
     small.style.color='red';
+    return false; 
   }
 };
 
