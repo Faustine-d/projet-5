@@ -1,0 +1,79 @@
+/*Global*/
+
+body{
+    margin: 0vw;
+    padding: 0vw;
+}
+
+body{
+    margin: 0vw;
+    padding: 0vw;
+}
+
+/*Header*/
+
+nav{
+    background-color: white;
+    box-shadow:0vw 0.5vw 0.5vw rgba(0,0,0,0.2);
+    padding: 0vw;
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+#logo{
+    height: 3vw;
+}
+
+/*Main*/
+main{margin-top: 10vw;}
+
+
+/*Hero*/
+/*#hero{
+    height: 10vw;
+}
+
+
+
+.image-hero{
+    width: 100%;
+    object-fit: cover;
+}*/
+/*info nom prix*/
+.card-title-price{
+    display: flex;
+    justify-content:space-between;
+}
+
+/*bouton*/
+.btn-primary {
+    color: #fff;
+    background-color: #af66ff;
+    border-color: #af66ff;
+}
+
+.btn-primary:hover{
+    color: #fff;
+    background-color: #ffa100;
+    border-color: #ffa100;}
+
+
+img {
+    object-fit: cover;
+}
+
+
+/*panier*/
+.btn-success{
+    color: #fff;
+    background-color: #af66ff;
+    border-color: #af66ff;}
+
+.btn-success:hover{
+    color: #fff;
+    background-color: #ffa100;
+    border-color: #ffa100;}
+
+   
