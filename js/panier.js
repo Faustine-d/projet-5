@@ -151,11 +151,16 @@ for (let index = 0; index < cameraLocalStorage.length; index++) {
 
 affichagePrixTotal();
 
-// calcul et affichage des prix "sous-total", "frais de port", "prix toal"
+// calcul et affichage des prix "sous-total", "frais de port", "prix total"
+////// arrondir à deux chiffres après la virgule :
+function decimal(x) {
+  return Number.parseFloat(x).toFixed(2);
+}
+////// calcul arrondi
 function affichagePrixTotal(){
-  document.getElementById("sous-total").innerHTML = totalSousTotal + " €";
+  document.getElementById("sous-total").innerHTML = decimal(totalSousTotal) + " €";
   document.getElementById("frais-de-port").innerHTML = fraisDePort + " €";
-  document.getElementById("prix-total").innerHTML = Math.round(totalSousTotal + fraisDePort)  + " €";
+  document.getElementById("prix-total").innerHTML = decimal(totalSousTotal + fraisDePort)  + " €";
  
 }
 
